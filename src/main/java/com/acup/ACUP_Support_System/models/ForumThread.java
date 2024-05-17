@@ -1,5 +1,3 @@
-package com.acup.ACUP_Support_System.models;
-
 import java.util.List;
 
 import com.acup.ACUP_Support_System.models.Reply;

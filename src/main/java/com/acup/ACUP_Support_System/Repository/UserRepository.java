@@ -1,5 +1,3 @@
-package com.acup.ACUP_Support_System.Repository;
-
 import com.acup.ACUP_Support_System.models.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 
