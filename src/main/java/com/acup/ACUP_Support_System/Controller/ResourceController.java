@@ -30,5 +30,8 @@ public class ResourceController {
         resourceService.deleteResource(id);
     }
 
-    // We can add additional controller methods if needed
+    @GetMapping("/search")
+    public List<Resource> searchResources(@RequestParam("query") String query) {
+        return resourceService.searchResources(query);
+    }
 }

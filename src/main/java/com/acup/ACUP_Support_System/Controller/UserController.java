@@ -13,10 +13,10 @@ public class UserController {
     @Autowired
     private UserService userService;
 
-//    @PostMapping("/register")
-//    public User registerUser(@RequestBody User user) {
-//        return userService.saveUser(user);
-//    }
+    @PostMapping("/register")
+    public User registerUser(@RequestBody User user) {
+        return userService.saveUser(user);
+    }
 
     @GetMapping("/{username}")
     public User getUserByUsername(@PathVariable String username) {

@@ -28,5 +28,8 @@ public class PersonController {
         personService.deletePerson(id);
     }
 
-    // We can add additional controller methods if needed
+    @GetMapping("/search")
+    public List<Person> searchPersons(@RequestParam("query") String query) {
+        return personService.searchPersons(query);
+    }
 }

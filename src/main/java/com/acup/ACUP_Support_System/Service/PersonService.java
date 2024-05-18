@@ -24,5 +24,9 @@ public class PersonService {
         personRepository.deleteById(id);
     }
 
+    public List<Person> searchPersons(String query) {
+        return personRepository.findByNameContainingIgnoreCase(query);
+    }
+
     // We can add custom query methods if needed
 }

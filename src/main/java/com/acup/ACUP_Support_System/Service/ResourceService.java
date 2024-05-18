@@ -24,5 +24,7 @@ public class ResourceService {
         resourceRepository.deleteById(id);
     }
 
-    // We can add custom query methods if needed
+    public List<Resource> searchResources(String query) {
+        return resourceRepository.findByNameContainingIgnoreCase(query);
+    }
 }
