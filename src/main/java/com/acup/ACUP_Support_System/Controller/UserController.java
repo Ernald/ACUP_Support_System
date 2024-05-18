@@ -1,3 +1,5 @@
+package com.acup.ACUP_Support_System.Controller;
+
 import com.acup.ACUP_Support_System.Service.UserService;
 import com.acup.ACUP_Support_System.models.User;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -11,10 +13,10 @@ public class UserController {
     @Autowired
     private UserService userService;
 
-    @PostMapping("/register")
-    public User registerUser(@RequestBody User user) {
-        return userService.saveUser(user);
-    }
+//    @PostMapping("/register")
+//    public User registerUser(@RequestBody User user) {
+//        return userService.saveUser(user);
+//    }
 
     @GetMapping("/{username}")
     public User getUserByUsername(@PathVariable String username) {

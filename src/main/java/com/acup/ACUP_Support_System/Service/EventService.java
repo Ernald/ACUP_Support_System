@@ -1,3 +1,5 @@
+package com.acup.ACUP_Support_System.Service;
+
 import com.acup.ACUP_Support_System.Repository.EventRepository;
 import com.acup.ACUP_Support_System.models.Event;
 import org.springframework.beans.factory.annotation.Autowired;

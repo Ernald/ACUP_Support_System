@@ -1,3 +1,5 @@
+package com.acup.ACUP_Support_System.models;
+
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -9,6 +11,8 @@ public class Resource {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String name;
+
+    public Resource(){}
 
     public Resource(Long id, String name) {
         this.id = id;

@@ -1,7 +1,9 @@
+package com.acup.ACUP_Support_System.Service;
+
 import com.acup.ACUP_Support_System.Repository.UserRepository;
 import com.acup.ACUP_Support_System.models.User;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
+//import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -11,13 +13,13 @@ public class UserService {
     @Autowired
     private UserRepository userRepository;
 
-    @Autowired
-    private BCryptPasswordEncoder bCryptPasswordEncoder;
+//    @Autowired
+//    private BCryptPasswordEncoder bCryptPasswordEncoder;
 
-    public User saveUser(User user) {
-        user.setPassword(bCryptPasswordEncoder.encode(user.getPassword()));
-        return userRepository.save(user);
-    }
+//    public User saveUser(User user) {
+//        user.setPassword(bCryptPasswordEncoder.encode(user.getPassword()));
+//        return userRepository.save(user);
+//    }
 
     public User findByUsername(String username) {
         return userRepository.findByUsername(username);
